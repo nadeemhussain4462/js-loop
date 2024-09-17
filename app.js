@@ -55,30 +55,48 @@ for (i = 0; i < Series.length; i++) {
   document.write(Series[i] + "</br>")
 }
 
-// Question no 7
+// Question no 7 You have an array
+// A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”] Write a program to enable “search by user input” in an array.
+var A = ["cake", "apple pie", "cookie", "chips", "patties"]
+var input = prompt("Enter the item you want to search")
+var found = false
+for (i = 0; i < A.length; i++) {
+  if (input == A[i]) {
+    found = true
+    break
+  }
+}
+if (found) {
+  document.write("<h1>" + input  + " is found in the array" + "</h1>" + '</br>')
+} else {
+  document.write(input + " is not found in the array" + '</br>')
+}
 
+// Question no 8 Write a program to find the maximum value in an array.
+var arr = [24,53,78,91,12]
+var max = arr[0]  
+for (i = 1; i < arr.length; i++) {
+  if (arr[i] > max) {
+    max = arr[i]
+  }
+}
+document.write("The maximum value in the array is " + max + '</br>')
 
+// Question no 9 Write a program to find the minimum value in an array.
+var arr = [24,53,78,91,12]
+var min = arr[0]
+for (i = 1; i < arr.length; i++) {
+  if (arr[i] < min) {
+    min = arr[i]
+  }
+}
+document.write("The minimum value in the array is " + min + '</br>')
 
+// Question no 10 Write a program to print multiples of 5 ranging 1 to 100.
+document.write("<h1>Multiples of 5 ranging 1 to 100</h1>")
+for (i = 1; i <= 100; i++) {
+  if (i % 5 == 0) {
+    document.write(i + "</br>")
+  }
+}
 
-
-
-
-// var cleancity = ["karachi", "islamabad", "lahore", "faisalabad"];
-
-// if (citycheck === cleancity[0]) {
-//   alert("it is clean city");
-// } else if (citycheck === cleancity[1]) {
-//   alert("it is clean city");
-// } else if (citycheck === cleancity[2]) {
-//   alert("it is clean city");
-// } else if (citycheck === cleancity[3]) {
-//   alert("it is clean city");
-// } else {
-//   alert("it is not clean city");
-// }
-
-// for (i = 0; i <= 4; i++) {
-//   if (citycheck === cleancity[i]) {
-//     alert("it is clean city");
-//   }
-// }
